@@ -10,7 +10,9 @@ export const PostView = () => {
   }, [])
   return (
     <div>
-      <h2>List of Posts</h2>
+      <h1 className="font-bold underline text-[22px] mt-[30px] text-[#358ea0]">
+      List of Posts
+    </h1>
       {post.loading && <div>Loading...</div>}
       {!post.loading && post.error ? <div>Error: {post.error}</div> : null}
       {!post.loading && post.posts.length ? (

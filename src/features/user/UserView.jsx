@@ -10,7 +10,9 @@ export const UserView = () => {
   }, [])
   return (
     <div>
-      <h2>List of Users</h2>
+      <h1 className="font-bold underline text-[22px] text-[#358ea0]">
+      List of Users
+    </h1>
       {user.loading && <div>Loading...</div>}
       {!user.loading && user.error ? <div>Error: {user.error}</div> : null}
       {!user.loading && user.users.length ? (
